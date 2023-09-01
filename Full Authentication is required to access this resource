@@ -1,0 +1,92 @@
+2023-08-21T12:20:01.790+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.security.jwt.AuthTokenFilter       : null
+2023-08-21T12:20:01.861+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.controller.AuthController          : LoginRequest(username=aaa, password=1111)
+2023-08-21T12:20:01.928+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.s.service.UserDetailsServiceImpl   : aaa
+2023-08-21T12:20:02.025+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.s.service.UserDetailsServiceImpl   : User(id=64e24dce9e2da51756f33aa3, username=aaa, password=$2a$10$Il.AqITUc2AiSb2UODnCC.Z4SzQ1LRyaAYZFT1F1BwxPZhIKsneAu, name=Test, email=aaaa@aaaa.com, schoolName=aaaa Univ, roles=[com.example.loginregister.entity.Role@7a2a45c2])
+2023-08-21T12:20:02.026+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.security.service.UserDetailsImpl   : User(id=64e24dce9e2da51756f33aa3, username=aaa, password=$2a$10$Il.AqITUc2AiSb2UODnCC.Z4SzQ1LRyaAYZFT1F1BwxPZhIKsneAu, name=Test, email=aaaa@aaaa.com, schoolName=aaaa Univ, roles=[com.example.loginregister.entity.Role@7a2a45c2])
+2023-08-21T12:20:02.026+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.security.service.UserDetailsImpl   : [ROLE_ADMIN]
+2023-08-21T12:20:02.089+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.security.service.UserDetailsImpl   : [ROLE_ADMIN]
+2023-08-21T12:20:02.089+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.controller.AuthController          : UsernamePasswordAuthenticationToken [Principal=com.example.loginregister.security.service.UserDetailsImpl@1c7ca5c1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-08-21T12:20:02.089+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.controller.AuthController          : SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.loginregister.security.service.UserDetailsImpl@1c7ca5c1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2023-08-21T12:20:02.090+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.loginregister.security.jwt.JwtUtils  : UsernamePasswordAuthenticationToken [Principal=com.example.loginregister.security.service.UserDetailsImpl@1c7ca5c1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-08-21T12:20:02.090+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.loginregister.security.jwt.JwtUtils  : com.example.loginregister.security.service.UserDetailsImpl@1c7ca5c1
+2023-08-21T12:20:02.119+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.controller.AuthController          : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYWEiLCJpYXQiOjE2OTI1ODgwMDIsImV4cCI6MTY5MjY3NDQwMn0.7Z93HjtUqcBgpEATAGaoy6-GtAcoFIEks4sMJHmp2CM
+2023-08-21T12:20:02.119+09:00  INFO 14312 --- [nio-8080-exec-2] c.e.l.security.service.UserDetailsImpl   : [ROLE_ADMIN]
+2023-08-21T12:20:54.255+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.security.jwt.AuthTokenFilter       : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYWEiLCJpYXQiOjE2OTI1ODgwMDIsImV4cCI6MTY5MjY3NDQwMn0.7Z93HjtUqcBgpEATAGaoy6-GtAcoFIEks4sMJHmp2CM
+2023-08-21T12:20:54.255+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.loginregister.security.jwt.JwtUtils  : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYWEiLCJpYXQiOjE2OTI1ODgwMDIsImV4cCI6MTY5MjY3NDQwMn0.7Z93HjtUqcBgpEATAGaoy6-GtAcoFIEks4sMJHmp2CM
+2023-08-21T12:20:54.275+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.security.jwt.AuthTokenFilter       : aaa
+2023-08-21T12:20:54.275+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.s.service.UserDetailsServiceImpl   : aaa
+2023-08-21T12:20:54.279+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.s.service.UserDetailsServiceImpl   : User(id=64e24dce9e2da51756f33aa3, username=aaa, password=$2a$10$Il.AqITUc2AiSb2UODnCC.Z4SzQ1LRyaAYZFT1F1BwxPZhIKsneAu, name=Test, email=aaaa@aaaa.com, schoolName=aaaa Univ, roles=[com.example.loginregister.entity.Role@3d5545ba])
+2023-08-21T12:20:54.279+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.security.service.UserDetailsImpl   : User(id=64e24dce9e2da51756f33aa3, username=aaa, password=$2a$10$Il.AqITUc2AiSb2UODnCC.Z4SzQ1LRyaAYZFT1F1BwxPZhIKsneAu, name=Test, email=aaaa@aaaa.com, schoolName=aaaa Univ, roles=[com.example.loginregister.entity.Role@3d5545ba])
+2023-08-21T12:20:54.279+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.security.service.UserDetailsImpl   : [ROLE_ADMIN]
+2023-08-21T12:20:54.279+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.security.jwt.AuthTokenFilter       : 11111111com.example.loginregister.security.service.UserDetailsImpl@64bed097
+2023-08-21T12:20:54.279+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.security.service.UserDetailsImpl   : [ROLE_ADMIN]
+2023-08-21T12:20:54.279+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.security.jwt.AuthTokenFilter       : UsernamePasswordAuthenticationToken [Principal=com.example.loginregister.security.service.UserDetailsImpl@64bed097, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-08-21T12:20:54.279+09:00  INFO 14312 --- [nio-8080-exec-4] c.e.l.security.jwt.AuthTokenFilter       : SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.loginregister.security.service.UserDetailsImpl@64bed097, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ADMIN]]]
+2023-08-21T12:20:54.292+09:00  WARN 14312 --- [nio-8080-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/api/test/User Content.] was not loaded as the canonical path [/api/test/User Content] did not match. Use of symlinks is one possible cause.
+2023-08-21T12:20:54.295+09:00 ERROR 14312 --- [nio-8080-exec-4] c.e.l.security.jwt.AuthEntryPointJwt     : Unauthorized error: Full authentication is required to access this resource
+
+org.springframework.security.authentication.InsufficientAuthenticationException: Full authentication is required to access this resource
+	at org.springframework.security.web.access.ExceptionTranslationFilter.handleAccessDeniedException(ExceptionTranslationFilter.java:199) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.handleSpringSecurityException(ExceptionTranslationFilter.java:178) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:147) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:91) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.1.2.jar:6.1.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:358) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:151) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
